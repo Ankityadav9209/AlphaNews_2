@@ -1,8 +1,8 @@
 {
-  "name": "rishi-react",
+  "name": "alphanews",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://mr-rishikesh.github.io/alphaNews",
+  "homepage": "https://ankityadav9209.github.io/AlphaNews_2",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
@@ -22,7 +22,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-   "deploy": "gh-pages -d build",
+   "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
