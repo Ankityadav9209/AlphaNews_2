@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/AlphaNews_2/static/css/main.6ea1b2a5.css",
+    "main.js": "/AlphaNews_2/static/js/main.e9d31ece.js",
+    "static/js/453.e8e9545c.chunk.js": "/AlphaNews_2/static/js/453.e8e9545c.chunk.js",
+    "static/media/loading.gif": "/AlphaNews_2/static/media/loading.b51df3f3ec072548cb48.gif",
+    "index.html": "/AlphaNews_2/index.html",
+    "main.6ea1b2a5.css.map": "/AlphaNews_2/static/css/main.6ea1b2a5.css.map",
+    "main.e9d31ece.js.map": "/AlphaNews_2/static/js/main.e9d31ece.js.map",
+    "453.e8e9545c.chunk.js.map": "/AlphaNews_2/static/js/453.e8e9545c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6ea1b2a5.css",
+    "static/js/main.e9d31ece.js"
+  ]
+}
