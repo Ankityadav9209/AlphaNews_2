@@ -66,10 +66,11 @@ export class News extends Component {
   async fetchNews() {
     this.props.setProgress(10);
     this.setState({ loading: true });
-    const url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=${this.props.apiKey}2&page=${this.state.page}&pageSize=${this.props.pageSize}`;
+    const url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=${this.props.apiKey}&page=${this.state.page}&pageSize=${this.props.pageSize}`;
     let data = await fetch(url);
     this.props.setProgress(30);
     let parsedData = await data.json();
+    console.log("API RESPONSE:", parsedData);
     this.props.setProgress(50);
     this.setState({
       articles: parsedData.articles,
@@ -95,8 +96,9 @@ export class News extends Component {
         {this.state.loading && <Spinner />}
 
         <div className="row my-3">
-          {!this.state.loading &&
-            this.state.articles.map((element) => {
+         {!this.state.loading &&
+  Array.isArray(this.state.articles) &&
+  this.state.articles.map((element) => {
               return (
                 <div className="col-md-4" key={element.url}>
                   <NewsItem

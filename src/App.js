@@ -21,7 +21,7 @@ export default class App extends Component {
  
   render() {
     return (
-      <BrowserRouter basename='/alphaNews'>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
         <div>
         <LoadingBar
         height = {3}
